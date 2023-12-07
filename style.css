@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+:root{
+    --primary-c:#fa8072;
+    --secondary-c:#73adfa;
+    --terciary-c:#7f8690;
+    --background-darkmode:#676f7a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-style: 0;
+    text-decoration: none;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size:22px;
+}
+header{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap-sections-header{
+    width: 30%;
+    height: 80%;
+    display: flex;
+}
+.header-section{
+    font-size: 22px;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-c);
+    font-weight: 600;
+}
+.header-section-border{
+    border-left: 2px solid var(--primary-c);
+    border-right: 2px solid var(--primary-c);
+
+}
+.wrap-hero-section{
+    height: 92vh;
+    width: 100vw;
+    background-color: #676f7a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.presentation{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    background-color: #7f8690;
+}
+.profile-image{
+    width: 60%;
+    border: 1px solid var(--secondary-c);
+    border-radius: 100%;
+    background-color: var(--secondary-c);
+}
+.wrap-title-presentation{
+    width: 40%;
+    height: 60%;
+    background-color: aqua;
+}
+.wrap-name-presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+p{
+  display: flex;
+  justify-content: center;
+  align-items:center; 
+}
+h1{
+    font-size: 170%;
+}
+
+
+
+
+
+.social-logo img{
+    width: 40px;
+    border-radius: 10%;
+}
