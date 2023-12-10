@@ -10,15 +10,15 @@
 
 <body>
     <header>
-        <div class="wrap-sections-header">
-            <a href="" class="header-section">Home</a>
-            <a href="" class="header-section header-section-border">Projects</a>
-            <a href="" class="header-section">Contact</a>
-        </div>
+        <nav class="wrap-sections-header">
+            <a href="#hero-section" class="header-section">Home</a>
+            <a href="#projects" class="header-section header-section-border">Projects</a>
+            <a href="#contact" class="header-section">Contact</a>
+        </nav>
     </header>
 
     <!-- Presentation, cta and image  -->
-    <section class="wrap-hero-section">
+    <section class="wrap-hero-section" id="hero-section">
         <article class="presentation">
             <div class="wrap-title-presentation">
                 <div class="wrap-all-title-presentation">
@@ -75,9 +75,9 @@
         </article>
     </section>
 
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
         <div class="wrap-title-section">
-            <h2>
+            <h2 >
                 Projects
             </h2>
         </div>
@@ -120,7 +120,7 @@
     </section>
 
     <!-- Contact me -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="wrap-title-contact-section">
             <h2>Contact me</h2>
         </div>
@@ -129,16 +129,23 @@
             <form action="procesar_formulario.php" method="post" class="form-contact">
                 <div class="wrap-two-inputs">
                     <input type="text" name="nombre" id="nombre" required placeholder="Full name">
-                    <input type="email" name="email" id="" required placeholder="Email address">
+                    <input type="email" name="email" id="email" required placeholder="Email address">
                 </div>
-                <input type="text" id="asunto" required placeholder="Subject">
+                <div class="wrap-input">
+
+                    <input type="text" id="asunto" required placeholder="Subject">
+                </div>
                 <textarea name="" id="" cols="40" rows="5" placeholder="Message"></textarea>
+               <div class="wrap-submit">
+                   <input type="submit" value="Send message" class="cta-a submit-cta">
+               </div>
+                
             </form>
         </div>
     </section>
 
     <footer>
-        <div class="wrap-social-logos">
+        <div class="wrap-social-logos social-logos-footer">
             <a href="#" class="social-logo"><img src="./assets/images/Facebook-logo.png" alt="Facebook logo"></a>
             <a href="#" class="social-logo"><img src="./assets/images/Instagram-logo.png" alt="Instagram logo"></a>
             <a href="#" class="social-logo"><img src="./assets/images/Linkedin-logo.png" alt="Linkedin logo"></a>
