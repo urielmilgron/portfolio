@@ -14,7 +14,7 @@
     font-style: 0;
     text-decoration: none;
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
 
 }
 
@@ -87,9 +87,10 @@ header {
 }
 
 .wrap-hero-section {
-    height: 92vh;
+    height: 100vh;
     width: 100vw;
     flex-direction: row;
+
 }
 
 .presentation {
@@ -105,36 +106,45 @@ header {
 }
 
 .wrap-title-presentation {
-    width: 40%;
-    height: 55%;
+    width: 13rem;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+
 }
 
 .wrap-all-title-presentation {
     width: 100%;
-    height: 50%;
+    height: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .wrap-name-presentation {
-    height: 35%;
+    height: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1,
 h2 {
-    font-size: 40px;
+    font-size: 32px;
     color: #73adfa;
 }
 
 .cta-a {
     background-color: var(--primary-c);
     color: white;
-    width: 65%;
-    height: 18%;
+    width: 130px;
+    height: 52px;
     border-radius: 5px;
     filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.25))
 }
