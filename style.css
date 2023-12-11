@@ -347,10 +347,17 @@ footer {
 }
 
 /* Media queries */
+/* # Mobile
+only screen and (min-width: 480px)
 
-@media only screen and (min-width:600px) and (max-width:1120px){
+# Tablet
+only screen and (min-width: 768px)  */
+@media only screen and (max-width:800px){
  h1, h2{
-    font-size: 35px;
+    font-size: 30px;
+ }
+ p{
+    font-size: 18px;
  }
  .about_logos-section{
     height: 42vh;
@@ -358,22 +365,46 @@ footer {
  .submit-cta{
     width: 25%;
  }
+ .logos-section{
+    flex-wrap: wrap;
+ }
+ .logo-brand{
+    width: 35px;
+ }
+ .projects-section{
+    height: 100vh;
+ }
+ .wrap-projects-section{
+    flex-wrap: wrap;
+ }
+ .item-projects-section{
+    height: 12rem;
+    margin-left: 5px;
+    width: 9rem;
+ }
+ .submit-cta {
+    width: 140px;
+    height: 52px;
+    font-size: 18px;
+    border: none;
+    padding: 0;
+
+}
 }
 @media only screen and (max-width: 480px) {
     .wrap-hero-section{
         height: 80vh;
         flex-direction: column-reverse;
         margin-top: 80px;
+        
     }
     .presentation{
-        background-color: #7f8690;
         width: 40%;
     height: 80%;
     }
     .wrap-title-presentation {
         width: 100%;
         height: 100%;
-        background-color: #fa8072;
     }
     .profile-image {
         width: 100%;
