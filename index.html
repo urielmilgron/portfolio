@@ -143,16 +143,16 @@
         </div>
 
         <div class="wrap-form-contact-section">
-            <form action="procesar_formulario.php" method="post" class="form-contact">
+            <form action="contact.php" method="post" class="form-contact">
                 <div class="wrap-two-inputs">
                     <input type="text" name="nombre" id="nombre" required placeholder="Full name">
                     <input type="email" name="email" id="email" required placeholder="Email address">
                 </div>
                 <div class="wrap-input">
 
-                    <input type="text" id="asunto" required placeholder="Subject">
+                    <input type="text" id="asunto" name="Subject" required placeholder="Subject">
                 </div>
-                <textarea name="" id="" cols="40" rows="5" placeholder="Message"></textarea>
+                <textarea name="message" id="" cols="40" rows="5" placeholder="Message"></textarea>
                <div class="wrap-submit">
                    <input type="submit" value="Send message" class="cta-a submit-cta">
                </div>
@@ -175,5 +175,5 @@
         </div>
     </footer>
 </body>
-<script src="/script.js"></script>
+<script src="script.js"></script>
 </html>
