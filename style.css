@@ -2,7 +2,7 @@
 
 :root {
     --primary-c: #fa8072;
-    --secondary-c: #73adfa;
+    --secondary-c: #73ADFA;
     --terciary-c: #7f8690;
     --background-darkmode: #676f7a;
     scroll-behavior: smooth;
@@ -453,7 +453,6 @@ only screen and (min-width: 768px)  */
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
 }
 @media only screen and (max-width:800px){
  h1, h2{
@@ -468,6 +467,9 @@ only screen and (min-width: 768px)  */
  .submit-cta{
     width: 25%;
  }
+ .about_logos-section{
+    height: 40vh;
+}
  .logos-section{
     flex-wrap: wrap;
  }
@@ -516,7 +518,7 @@ only screen and (min-width: 768px)  */
         font-size: 22px;
      }
      .about_logos-section{
-        height: 50vh;
+        height: 65vh;
     }
     .logos-section{
     height: 30%;

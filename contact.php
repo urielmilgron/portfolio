@@ -1,40 +1,54 @@
 <?php
-if($_POST) {
-    $nombre = "";
-    $email = "";
-    $subject = "";
-    $message = "";
-    $addressee = "urielmilgron18@gmail.com"
-    
-    if(isset($_POST['nombre'])) {
-      $nombre = filter_var($_POST['nombre'], FILTER_SANITIZE_STRING);
-    }
-    
-    if(isset($_POST['email'])) {
-    	$email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
-    	$email = filter_var($email, FILTER_VALIDATE_EMAIL);
-    }
-    
-    if(isset($_POST['subject'])) {
-    	$subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
-    }
-    
-    if(isset($_POST['message'])) {
-    	$message = htmlspecialchars($_POST['message']);
-    }
-    
-    
-    $headers  = 'MIME-Version: 1.0' . "\r\n"
-    .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $email . "\r\n";
-    
-    if(mail($addressee, $subject, $message, $headers)) {
-    	echo "<p>Thank you for contacting us, $nombre. You will get a reply within 24 hours.</p>";
+//Configurar la ruta del include y descomentar
+include('/config.php');
+
+//Usamos phpmailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '/vendor/phpmailer/autoload.php';
+
+
+if ($_POST) {
+    // Obtener y filtrar datos del formulario
+    $nombre = filter_var($_POST['nombre'], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+    $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+    $message = htmlspecialchars($_POST['message']);
+    $addressee = 'contacto@urielwebstudio.online';
+
+    // Validar que todos los campos estén presentes y válidos
+    if ($nombre && $email && $subject && $message) {
+        // Configurar el envío de correo
+        $mail = new PHPMailer(true);
+        $mail->isSMTP();
+        $mail->Host       = $smtp_host;
+        $mail->SMTPAuth   = true;
+        $mail->Username   = $smtp_user;
+        $mail->Password   = $smtp_pass;
+        $mail->SMTPSecure = $smtp_secure ? 'tls' : '';
+        $mail->Port       = $smtp_port;
+
+        // Resto de la configuración del correo...
+        
+        // Configurar los destinatarios, asunto, cuerpo del mensaje, etc.
+        $mail->setFrom($email, $nombre);
+        $mail->addAddress($addressee);
+        $mail->Subject = $subject;
+        $mail->Body    = $message;
+
+        try {
+            // Envía el correo
+            $mail->send();
+            var_dump($mail);
+            header('Location: index.html'); // Redirigir después del envío exitoso
+        } catch (Exception $e) {
+            echo '<p>An error occurred: ' . $e->getMessage() . '</p>';
+        }
     } else {
-    	echo '<p>We are sorry but the email did not go through.</p>';
+        echo '<p>Invalid form data</p>';
     }
-    
 } else {
-    echo '<p>Something went wrong</p>';
+    echo '<p>Form not submitted</p>';
 }
 ?>
