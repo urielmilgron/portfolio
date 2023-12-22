@@ -150,7 +150,7 @@
                 </div>
                 <div class="wrap-input">
 
-                    <input type="text" id="asunto" name="Subject" required placeholder="Subject">
+                    <input type="text" id="asunto" name="subject" required placeholder="Subject">
                 </div>
                 <textarea name="message" id="" cols="40" rows="5" placeholder="Message"></textarea>
                <div class="wrap-submit">
