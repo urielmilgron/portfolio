@@ -59,15 +59,7 @@ footer {
     flex-direction: column;
 }
 
-/* header {
-    top: 0;
-    left: 0;
-    position: fixed;
-    height: 8vh;
-    width: 100vw;
-    background-color: white;
-    z-index: 1;
-} */
+
 
 .header{
     background-color: white;
@@ -421,9 +413,10 @@ only screen and (min-width: 768px)  */
         left: -100%;
         top: 4.4rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color:#ffffff98;
+        backdrop-filter: blur(50px);
         width: 100%;
-        border-radius: 10px;
+        border-radius: 0 0 2% 2%;
         text-align: center;
         transition: 0.3s;
         box-shadow:
@@ -485,6 +478,8 @@ only screen and (min-width: 768px)  */
  .item-projects-section{
     height: 12rem;
     margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 1rem;
     width: 9rem;
  }
  .submit-cta {
@@ -498,7 +493,7 @@ only screen and (min-width: 768px)  */
 }
 @media only screen and (max-width: 480px) {
     .wrap-hero-section{
-        height: 60vh;
+        height: 70vh;
         flex-direction: column-reverse;
         margin-top: 7rem;
         margin-bottom: 11rem;
@@ -536,10 +531,12 @@ only screen and (min-width: 768px)  */
     }
     .wrap-projects-section{
         height: 48rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     .item-projects-section {
         height: 11rem;
-        margin-left: 5px;
+        margin-bottom:1rem;
         width: 9rem;
     }
     .wrap-two-inputs{

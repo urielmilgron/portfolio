@@ -45,7 +45,7 @@
                         </h1>
                         <p>Frontend Developer</p>
                     </div>
-                    <a href="#" class="cta-a">Contact me</a>
+                    <a href="#contact" class="cta-a">Contact me</a>
                 </div>
 
 
@@ -102,34 +102,34 @@
         <div class="wrap-projects-section">
             <article class="item-projects-section">
                 <div class="item-image-container">
-                    <img src="assets/images/Match home 1.png" alt="">
+                    <img src="assets/images/Match home 1.png" alt="Match Home App">
                 </div>
                 <div class="item-button-container">
-                    <a href="" class="button-view-project">View Project</a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1d4F7kPPX0refcHQ8BNBHsezvfJN-5aWw/view?usp=sharing" class="button-view-project">View Project</a>
                 </div>
             </article>
             <article class="item-projects-section">
                 <div class="item-image-container">
-                    <img src="assets/images/ruleta- 1.png" alt="">
+                    <img src="assets/images/ruleta- 1.png" alt="Roulette">
                 </div>
                 <div class="item-button-container">
-                    <a href="" class="button-view-project">View Project</a>
+                    <a target="_blank" href="https://github.com/urielmilgron/programa-mentoring-santander.git" class="button-view-project">View Project</a>
                 </div>
             </article>
             <article class="item-projects-section">
                 <div class="item-image-container">
-                    <img src="assets/images/sym-caleta 1.png" alt="">
+                    <img src="assets/images/sym-caleta 1.png" alt="Ecommerce">
                 </div>
                 <div class="item-button-container">
-                    <a href="" class="button-view-project">View Project</a>
+                    <a target="_blank" href="https://github.com/urielmilgron/ecommercemilgron.git" class="button-view-project">View Project</a>
                 </div>
             </article>
             <article class="item-projects-section">
                 <div class="item-image-container">
-                    <img src="" alt="">
+                    <img src="" alt="Social App">
                 </div>
                 <div class="item-button-container">
-                    <a href="" class="button-view-project">View Project</a>
+                    <a target="_blank" href="https://github.com/urielmilgron/SocialApp" class="button-view-project">View Project</a>
                 </div>
             </article>
 
