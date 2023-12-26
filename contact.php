@@ -1,6 +1,6 @@
 <?php
 //Configurar la ruta del include y descomentar
-include_once('config.php');
+include_once('../config.php');
 
 //once para que no se incluya más de una vez :D
 require_once './vendor/autoload.php';
