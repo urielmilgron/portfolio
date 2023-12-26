@@ -126,7 +126,7 @@
             </article>
             <article class="item-projects-section">
                 <div class="item-image-container">
-                    <img src="" alt="Social App">
+                    <img src="assets/images/proyect_socialapp.jpg" alt="Social App">
                 </div>
                 <div class="item-button-container">
                     <a target="_blank" href="https://github.com/urielmilgron/SocialApp" class="button-view-project">View Project</a>
